@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://nazarinewasonga.github.io/Pizza-Project/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza website</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./Pizza_files/bootstrap.min.css">
+    <!-- Wicked css -->
+    <link rel="stylesheet" href="./Pizza_files/wickedcss.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./Pizza_files/animate.min.css">
+    <link rel="stylesheet" href="./Pizza_files/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Pizza_files/all.css">
+    <link rel="stylesheet" href="./Pizza_files/font-awesome.css">
+    <!-- Bootstrap core CSS -->
+    <link href="./Pizza_files/bootstrap.min(1).css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./Pizza_files/mdb.min.css" rel="stylesheet">
+    <!--Custom css file -->
+    <link rel="stylesheet" href="./Pizza_files/styles.css">
+</head>
+
+<body>
+    <!--Start Navigation //-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <h1 id="piz-pap" class="">Pi<span id="spantext">zz</span>Delivery!</h1>
+        <div class="navi">
+            <ul class="nav-items">
+                <li><a href="https://nazarinewasonga.github.io/Pizza-Project/#menus">Menu</a></li>
+                <li><a href="https://nazarinewasonga.github.io/Pizza-Project/#order">Orders</a></li>
+                <li><a href="https://nazarinewasonga.github.io/Pizza-Project/#contact">Contact</a></li>
+                <li><a href="https://nazarinewasonga.github.io/Pizza-Project/#location">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--End Navigation-->
+    <!--Start Landing-->
+    <div class="landing">
+        <div class="overlay">
+            <div id="push"></div>
+            <div class="landing-text">
+                <h1 class="text-white text-center"><span class="pizz">Pizza </span><span class="exc">Delivery!</span>
+                </h1>
+                <h2 class="text-white text-center">We deliver your pizza on the spot!!</h2>
+            </div>
+            <div class="h-buttons text-center">
+                <a href="https://nazarinewasonga.github.io/Pizza-Project/#welcome">
+                    <button class="btn bg-info floater  infinite delay-2s">Go</button>
+                </a>
+                <div class="socials">
+                    <a href="https://nazarinewasonga.github.io/Pizza-Project/"><span class="fab fa-facebook icon_facebook"></span></a>
+                    <a href="https://nazarinewasonga.github.io/Pizza-Project/"><span class="fab fa-twitter icon_twitter"></span></a>
+                    <a href="https://nazarinewasonga.github.io/Pizza-Project/"><span class="fab fa-google-plus icon_googlep"></span></a>
+                    <a href="https://nazarinewasonga.github.io/Pizza-Project/"><span class="fab fa-linkedin icon_linkedin"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Landing-->
+    <!--Welcome Section-->
+    <div class="welcome" id="welcome">
+        <br><br><br><br>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="./Pizza_files/logo.png" alt="pizza-logo" class="karibu-img">
+                </div>
+                <div class="col-md-6 karibu-txt">
+                    <h1 class="text-center txt txt-big">Welcome <span class="pizz">Pizza </span><span class="exc">ASAP!!</span>
+                    </h1>
+                    <p class="text-center txt">The best pizza you'll ever taste</p>
+                    <p class="text-center txt">Order your pizza and we will deliver it to your location.</p>
+                    <a href="https://nazarinewasonga.github.io/Pizza-Project/#menus">
+                        <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start Content-->
+    <div id="menus"></div>
+    <br>
+    <div class="menu col-md-12">
+        <div class="menu-overlay">
+            <h1 class="text-center text-white" id="menu">Menu</h1>
+            <div class="pizza-menu row text-center">
+                <figure class="col-sm-4">
+                    <img src="./Pizza_files/small.jpg" alt="small-pizza" class="wiggle">
+                    <figcaption class="text-white">Regular<br>Ksh. 500</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="./Pizza_files/medium.png" alt="medium-pizza" class="wiggle">
+                    <figcaption class="text-white">Medium<br>Ksh. 1000</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="./Pizza_files/large.png" alt="large-pizza" class="wiggle">
+                    <figcaption class="text-white">Large<br>Ksh. 1500</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="orders" id="order">
+        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 order-overlay text-center">
+                <form class="col-sm-6 offset-sm-3 text-center">
+                    <label>Pick your pizza Flavour:</label>
+                    <select class="custom-select custom-select-md mb-3 flavour" required="">
+                        <option value="vegtikka">Veg Tikka</option>
+                        <option value="chickentikka">Chicken Tikka</option>
+                        <option value="periperi">Peri-Peri Chicken</option>
+                        <option value="bbq">BBQ Steak</option>
+                        <option value="boerewors">Boerewors</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="mushroom">Chicken and Mushroom</option>
+                        <option value="regina">Regina Pizza</option>
+                    </select>
+                    <label>Chose your preferred Size:</label>
+                    <select class="custom-select custom-select-md mb-3" id="size" required="">
+                        <option value="regular">Regular</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="crust">Choose your favorite Crust:</label>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required="">
+                        <option value="thin">Thin Crust @ Ksh. 100</option>
+                        <option value="thick">Thick Crust @ Ksh. 150</option>
+                        <option value="flatbread">FlatBread Crust @ sh. 180</option>
+                        <option value="custom">Custom Crust @ sh. 280</option>
+                    </select>
+                    <label>Select Your favourite Toppings</label>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required="">
+                        <option value="tomato">Tomato @ sh. 80</option>
+                        <option value="onions">Onions @ sh. 80</option>
+                        <option value="mushroom">Mushroom @ sh. 80</option>
+                        <option value="greenpepper">Green Pepper @ sh. 80</option>
+                        <option value=""></option>
+                        <option value="olives">Olives @ sh. 120</option>
+                        <option value="pineapple">Pineapple @ sh. 120</option>
+                        <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                        <option value="macon">Macon @ sh. 120</option>
+                        <option value="mince">Mince @ sh. 120</option>
+                        <option value=""></option>
+                        <option value="beef">Beef Peperoni @ sh. 170</option>
+                        <option value="chicken">Periperi Chicken @ sh. 170</option>
+                    </select>
+                    <label for="number">Number of Pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required="">
+
+                </form>
+                <a href="https://nazarinewasonga.github.io/Pizza-Project/#summary">
+                        <button type="submit" class="btn btn-success checkout" id="checkout">
+                            Checkout
+                        </button>
+                </a>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary</h1>
+        <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+        <ol id="list" class="text-center sum">
+        </ol>
+        <div class="cdata-overlay">
+            <div class="customerdata row">
+                <div class="col-sm-3"></div>
+                <form action="https://nazarinewasonga.github.io/Pizza-Project/" class="form-group col-sm-6 data">
+                    <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                    <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                    <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                    <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                </form>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <div class="d-block mx-auto text-center">
+            <button class="deliver">Make Delivery</button>
+            <button class="delivernot">Pick Up</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="contact-overlay">
+            <h1 class="text-center contact text-white">Contacts:</h1>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 subs">
+                    <h1 class="text-white text-center"> Call Us </h1>
+                    <p class="text-center">+254 1234 5678</p>
+                    <form>
+                        <div class="email-info">
+                            <div class="form-group fill-all-form">
+                                <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class=" email-info text-center">
+                            <button class="btn click-me" onclick="subscribe();">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-5">
+                    <h4 class="text-center get-pizza">We love feedback..send us a mail</h4>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <section id="location" class="container">
+        <h3 class="text-center slideanim">Location</h3>
+        <!-- Add Google Maps -->
+    <!-- <div id="googleMap" class="slideanim"></div>
+        <script>
+            function myMap() {
+                var myCenter = new google.maps.LatLng(53.3498, -6.2603);
+                var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                var marker = new google.maps.Marker({ position: myCenter });
+                marker.setMap(map);
+            }
+        </script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlW-uV2f7rzdz0e_ZADMv5kTKH8wXxB50&callback=myMap"></script>
+        <!--
+        To use this code on your website, get a free API key from Google.
+        Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+        -->
+    <!-- </section> --> --&gt; --&gt;
+
+    <section id="location" class="container"></section>
+    <h3 class="text-center slideanim">Location</h3>
+    <!-- Add Google Maps
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <div id="googleMap" class="slideanim"></div>
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(51.508742, -0.120850),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                var marker = new google.maps.Marker({ position: myCenter });
+                marker.setMap(map);
+            }
+        </script>
+        
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./Pizza_files/maps.html"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a></div>
+
+
+
+    </div>
+    <div class="footer">
+        <p align="center">
+            <font face="arial" size="-2">Pizza Delivery</font><br>
+            <font face="arial, helvetica" size="-2"><a href="https://github.com/NazarineWasonga" target="_blank" class="logo">NazarineWasonga</a></font> <br>
+            Copyright © 2021 All Rights Reserved
+        </p>
+        
+
+
+
+
+        <!--End Content-->
+
+<script src="./Pizza_files/jquery.js"></script>
+<script src="./Pizza_files/script.js"></script>
+<script src="./Pizza_files/scrollify.js"></script>
+
+</div></body></html>
